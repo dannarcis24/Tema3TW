@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 3 - Procesare de imagini</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Tema 3 - Procesare de imagini</h1>
+
+    <pre id="jsonOutput"> </pre>
+    <div class="container">
+        <div class="container-left">
+            <p> Imagine inițială:</p>
+            <canvas id="image1"> </canvas>
+        </div>
+
+        <div class="container-right">
+            <p> Imagine procesata:</p>
+            <canvas id="image2"></canvas><br><br>
+        </div>
+    </div>
+
+    <p>
+        Alegeți o opțiune:
+        <select id="menu1" onchange="handleMenu()"> 
+            <option value="" selected disabled>Selectați o opțiune</option>
+            <option value="1"> Oglindire pe verticala</option>
+            <option value="2"> Prelucrare doar pe partea stângă</option>
+        </select>
+    </p>
+
+    <p>
+        Alegeți o tema de procesare:
+        <select id="menu2" onchange="handleProcessing()"> 
+            <option value="" selected disabled>Selectați o opțiune</option>
+            <option value="1"> Converting Color Image to Gray-Scale Image</option>
+            <option value="2"> Normalize colors</option>
+        </select>
+    </p>
+
+    <buttin id="" onclick="reset()"> <b> Reseteaza</b></buttin>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+/* se imparte pe 2coloane */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+canvas {
+    height: 200px;
+    width: 300px;
+}
